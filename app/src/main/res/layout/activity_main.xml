@@ -28,21 +28,23 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOperator"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="157dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:inputType="numberDecimal"
         android:id="@+id/editTextSecondNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:layout_marginTop="24dp"
         android:gravity="center"
+        android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/textViewOperator"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="24dp" />
 
     <TextView
         android:id="@+id/textViewResult"
@@ -99,5 +101,6 @@
         android:text="="
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
